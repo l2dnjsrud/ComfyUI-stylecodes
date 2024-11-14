@@ -1,0 +1,4 @@
+
+*.pyc
+/output
+models/controlnet_model_11_80000.bin
