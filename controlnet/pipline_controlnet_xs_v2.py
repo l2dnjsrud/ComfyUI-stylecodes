@@ -856,6 +856,7 @@ class StableDiffusionPipelineXSv2(
         cross_attention_kwargs: Optional[Dict[str, Any]] = None,
         guidance_rescale: float = 0.0,
         clip_skip: Optional[int] = None,
+        stylecode: Optional[str] = None,
         callback_on_step_end: Optional[
             Union[Callable[[int, int, Dict], None], PipelineCallback, MultiPipelineCallbacks]
         ] = None,
@@ -1019,11 +1020,17 @@ class StableDiffusionPipelineXSv2(
             lora_scale=lora_scale,
             clip_skip=self.clip_skip,
         )
-        controlnet_cond = self.get_image_embeds(image)
+        if image is not None:
+            controlnet_cond = self.get_image_embeds(image)
+        else:
+            controlnet_cond =None
 
         if self.do_classifier_free_guidance:
                 prompt_embeds = torch.cat([prompt_embeds, negative_prompt_embeds])
-                controlnet_cond = torch.cat([controlnet_cond,controlnet_cond])
+                if controlnet_cond is not None:
+                    controlnet_cond = torch.cat([controlnet_cond,controlnet_cond])
+                else:
+                    controlnet_cond = None
         if ip_adapter_image is not None or ip_adapter_image_embeds is not None:
             image_embeds = self.prepare_ip_adapter_image_embeds(
                 ip_adapter_image,
@@ -1106,6 +1113,7 @@ class StableDiffusionPipelineXSv2(
                         conditioning_scale=controlnet_conditioning_scale,
                         cross_attention_kwargs=cross_attention_kwargs,
                         return_dict=True,
+                        stylecode=stylecode,
                     )[0]
 
                 

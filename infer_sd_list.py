@@ -36,7 +36,8 @@ parser.add_argument("--controlnet_conditioning_scale", type=float, default=1.0)
 parser.add_argument("--num_inference_steps", type=int, default=20)
 parser.add_argument("--input_folder", type=str, default="test_images", help="Path to the folder containing input images")
 parser.add_argument("--output_folder", type=str, default="output", help="Path to the folder to save output images")
-
+#SG161222/Realistic_Vision_V4.0_noVAE
+#Linaqruf/anything-v3.0
 args = parser.parse_args()
 processor_id = 'lineart_realistic'
 canny_processor = Processor(processor_id)
