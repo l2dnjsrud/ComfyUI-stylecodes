@@ -8,7 +8,7 @@ from controlnet.controlnetxs_appearance import StyleCodesModel
 from diffusers.models import UNet2DConditionModel
 from transformers import AutoProcessor, SiglipVisionModel
 
-def process_single_image(image_path, image=None):
+def make_stylecode(image_path, image=None):
     
     # Set up model components
     unet = UNet2DConditionModel.from_pretrained("runwayml/stable-diffusion-v1-5", subfolder="unet", torch_dtype=torch.float16, device="cuda")
@@ -53,4 +53,4 @@ if __name__ == "__main__":
 
 
     # Process a single image with the specified prompt
-    print(process_single_image(args.image_path))
+    print(make_stylecode(args.image_path))
