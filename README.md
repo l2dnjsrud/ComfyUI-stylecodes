@@ -1,3 +1,10 @@
+Weights: https://huggingface.co/CiaraRowles/stylecodes
+
+Paper: WIP
+
+Project Page: WIP
+
+
 Recent advances in Image generation have propelled capabilities to new heights, however existing methods of control for these models are insufficient for many use cases and social contexts.
 
 One of the most impressive recent examples of both beneficial controllability and the packaging of that in a way that allows for social control of generation models are the proliferation of srefs, these are codes used with MidJourneys image generation tool to encode a specific image style into a short numeric code. Allowing users to quickly share with their friends how to make images in a similar style to their art.
