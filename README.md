@@ -12,7 +12,7 @@ How to use
 ```
 pip install -r requirements.txt
 
-download the models from here: [https://huggingface.co/CiaraRowles/IP-Adapter-Instruct](https://huggingface.co/CiaraRowles/stylecodes)
+download the models from here: [[https://huggingface.co/CiaraRowles/IP-Adapter-Instruct](https://huggingface.co/CiaraRowles/stylecodes)](https://huggingface.co/CiaraRowles/stylecodes)
 
 place them in the "models" folder
 
