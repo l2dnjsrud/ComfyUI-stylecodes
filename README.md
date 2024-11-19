@@ -21,7 +21,7 @@ How to use
 ```
 pip install -r requirements.txt
 
-download the models from here: [[https://huggingface.co/CiaraRowles/IP-Adapter-Instruct](https://huggingface.co/CiaraRowles/stylecodes)](https://huggingface.co/CiaraRowles/stylecodes)
+download the models from here: https://huggingface.co/CiaraRowles/stylecodes
 
 place them in the "models" folder
 
@@ -31,4 +31,5 @@ run either demo.py, demo_make_stylecode.py or demo_use_stylecode.py with the pro
 
 Notes:
 The current implimentation is overfit to the dataset, fixable later
+
 The source dataset is trained on generated digital art and not cartoon or anime or realism, don't expect those to work very well.
