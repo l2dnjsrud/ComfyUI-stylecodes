@@ -12,7 +12,8 @@ One of the most impressive recent examples of both beneficial controllability an
 
 The only main drawback with this tool currently is both the inability to generate your own code from an image and the lack of an knowledge on how to reproduce this functionality. Stylecodes attempts to resolve both these issues by providing an open research solution to generating codes from images with a custom style Encoder.
 
-<img width="2122" alt="Demo-Image_3" src="https://github.com/user-attachments/assets/e7150b5e-8ea6-46ae-afa0-b8e48b8104d6">
+
+<img width="2122" alt="Demo-Image_5" src="https://github.com/user-attachments/assets/a3cbb51a-3730-4a70-9edc-c0696c129f0f">
 
 
 How to use
@@ -30,4 +31,4 @@ run either demo.py, demo_make_stylecode.py or demo_use_stylecode.py with the pro
 
 Notes:
 The current implimentation is overfit to the dataset, fixable later
-The source dataset isn't trained on digital art or cartoon or anime or realism, don't expect those to work very well.
+The source dataset is trained on generated digital art and not cartoon or anime or realism, don't expect those to work very well.
