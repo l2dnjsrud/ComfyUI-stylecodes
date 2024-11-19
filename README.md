@@ -2,7 +2,7 @@ Weights: https://huggingface.co/CiaraRowles/stylecodes
 
 Paper: WIP
 
-Project Page: WIP
+Project Page: https://ciarastrawberry.github.io/stylecodes.github.io/
 
 
 Recent advances in Image generation have propelled capabilities to new heights, however existing methods of control for these models are insufficient for many use cases and social contexts.
