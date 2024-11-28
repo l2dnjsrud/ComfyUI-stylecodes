@@ -12,12 +12,12 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/nullquant/ComfyUI-BrushNet"
+Repository = "https://github.com/l2dnjsrud/ComfyUI-stylecodes"
 # Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "nullquant"
-DisplayName = "ComfyUI-BrushNet"
+PublisherId = "l2dnjsrud"
+DisplayName = "ComfyUI-stylecodes"
 Icon = ""
 
 [tool.ruff]
