@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/l2dnjsrud/ComfyUI-stylecodes"
+Repository = "https://github.com/l2dnjsrud/stylecodes"
 # Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
